@@ -31,7 +31,8 @@ builder.Services.AddCors(options =>
         .AllowCredentials());
 });
 
-string serverAdress = "http://localhost:5106";
+// 5106 is wrong address
+string serverAdress = "https://localhost:7060";
 
 SymmetricSecurityKey signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("C'est tellement la meilleure cle qui a jamais ete cree dans l'histoire de l'humanite (doit etre longue)"));
 
