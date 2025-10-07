@@ -10,7 +10,7 @@ const LOCAL_STORAGE_EMAIL_KEY = "email";
 })
 export class AuthenticationService {
 
-  baseUrl = "https://localhost:7060/api/";
+  baseUrl = "http://localhost:5106/api/";
   accountBaseUrl = this.baseUrl + "Account/";
 
   authenticatedUserEmail: string | null = null;
